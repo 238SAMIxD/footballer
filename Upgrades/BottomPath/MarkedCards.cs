@@ -2,9 +2,9 @@
 using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
 
-namespace CardMonkey.Upgrades.BottomPath
+namespace Footballer.Upgrades.BottomPath
 {
-    public class MarkedCards : ModUpgrade<CardMonkey>
+    public class MarkedCards : ModUpgrade<Footballer>
     {
         public override int Path => BOTTOM;
         public override int Tier => 4;
@@ -12,7 +12,7 @@ namespace CardMonkey.Upgrades.BottomPath
 
         public override string Description => "Attacks extra fast permanently and with bigger range";
 
-        public override string Portrait => "CardMonkey-Portrait";
+        public override string Portrait => "Footballer-Portrait";
 
         public override void ApplyUpgrade(TowerModel tower)
         {

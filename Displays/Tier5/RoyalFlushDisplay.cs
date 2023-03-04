@@ -4,9 +4,9 @@ using BTD_Mod_Helper.Api.Display;
 using BTD_Mod_Helper.Extensions;
 using UnityEngine;
 
-namespace CardMonkey.Displays.Tier5
+namespace Footballer.Displays.Tier5
 {
-    public class RoyalFlushDisplay : ModTowerDisplay<CardMonkey>
+    public class RoyalFlushDisplay : ModTowerDisplay<Footballer>
     {
         public override string BaseDisplay => GetDisplay(TowerType.Alchemist, 0, 0, 5);
 

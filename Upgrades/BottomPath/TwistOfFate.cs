@@ -5,12 +5,12 @@ using Il2CppAssets.Scripts.Unity;
 using Il2CppAssets.Scripts.Utils;
 using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
-using CardMonkey.Displays.Projectiles;
-using CardMonkey.Upgrades.MiddlePath;
+using Footballer.Displays.Projectiles;
+using Footballer.Upgrades.MiddlePath;
 
-namespace CardMonkey.Upgrades.BottomPath
+namespace Footballer.Upgrades.BottomPath
 {
-    public class TwistOfFate : ModUpgrade<CardMonkey>
+    public class TwistOfFate : ModUpgrade<Footballer>
     {
         public override int Path => BOTTOM;
         public override int Tier => 5;
@@ -19,7 +19,7 @@ namespace CardMonkey.Upgrades.BottomPath
         public override string DisplayName => "Twist of Fate";
         public override string Description => "Cards can explode, stun Bloons, and make Bloons give extra money.";
 
-        public override string Portrait => "CardMonkey-Portrait";
+        public override string Portrait => "Footballer-Portrait";
 
         public override void ApplyUpgrade(TowerModel tower)
         {

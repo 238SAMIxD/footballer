@@ -1,13 +1,13 @@
 ﻿using BTD_Mod_Helper;
-using CardMonkey;
+using Footballer;
 using MelonLoader;
 
-[assembly: MelonInfo(typeof(CardMonkeyMod), ModHelperData.Name, ModHelperData.Version, ModHelperData.RepoOwner)]
+[assembly: MelonInfo(typeof(FootballerMod), ModHelperData.Name, ModHelperData.Version, ModHelperData.RepoOwner)]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 
-namespace CardMonkey
+namespace Footballer
 {
-    public class CardMonkeyMod : BloonsTD6Mod
+    public class FootballerMod : BloonsTD6Mod
     {
         // No Harmony Patches or hooks required for this whole tower!
     }

@@ -1,12 +1,12 @@
 ﻿using Il2CppAssets.Scripts.Models.Towers;
 using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
-using CardMonkey.Displays.Projectiles;
+using Footballer.Displays.Projectiles;
 using Il2Cpp;
 
-namespace CardMonkey.Upgrades.MiddlePath
+namespace Footballer.Upgrades.MiddlePath
 {
-    public class WildCards : ModUpgrade<CardMonkey>
+    public class WildCards : ModUpgrade<Footballer>
     {
         public override int Path => MIDDLE;
         public override int Tier => 2;
@@ -14,7 +14,7 @@ namespace CardMonkey.Upgrades.MiddlePath
 
         public override string Description => "Cards can damage all Bloon types";
 
-        public override string Portrait => "CardMonkey-Portrait";
+        public override string Portrait => "Footballer-Portrait";
 
         public override void ApplyUpgrade(TowerModel tower)
         {

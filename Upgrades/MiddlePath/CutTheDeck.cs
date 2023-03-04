@@ -3,9 +3,9 @@ using Il2CppAssets.Scripts.Simulation.Towers;
 using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
 
-namespace CardMonkey.Upgrades.MiddlePath
+namespace Footballer.Upgrades.MiddlePath
 {
-    public class CutTheDeck : ModUpgrade<CardMonkey>
+    public class CutTheDeck : ModUpgrade<Footballer>
     {
         public override int Path => MIDDLE;
         public override int Tier => 1;
@@ -14,7 +14,7 @@ namespace CardMonkey.Upgrades.MiddlePath
         public override string DisplayName => "Cut the Deck";
         public override string Description => "Cards have increased pierce";
 
-        public override string Portrait => "CardMonkey-Portrait";
+        public override string Portrait => "Footballer-Portrait";
 
         public override void ApplyUpgrade(TowerModel tower)
         {

@@ -9,13 +9,13 @@ using Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors;
 using Il2CppAssets.Scripts.Unity;
 using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
-using CardMonkey.Displays.Projectiles;
+using Footballer.Displays.Projectiles;
 using Il2Cpp;
 using Il2CppInterop.Runtime.InteropTypes.Arrays;
 
-namespace CardMonkey.Upgrades.MiddlePath
+namespace Footballer.Upgrades.MiddlePath
 {
-    public class AceInTheHole : ModUpgrade<CardMonkey>
+    public class AceInTheHole : ModUpgrade<Footballer>
     {
         public override int Path => MIDDLE;
         public override int Tier => 4;
@@ -26,7 +26,7 @@ namespace CardMonkey.Upgrades.MiddlePath
         public override string Description =>
             "Ability: Throws a super powerful Ace card that seeks Bloons along the track.";
 
-        public override string Portrait => "CardMonkey-Portrait";
+        public override string Portrait => "Footballer-Portrait";
 
         public override void ApplyUpgrade(TowerModel tower)
         {

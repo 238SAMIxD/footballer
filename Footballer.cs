@@ -6,14 +6,14 @@ using Il2CppAssets.Scripts.Models.TowerSets;
 using BTD_Mod_Helper.Api.Enums;
 using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
-using CardMonkey.Displays.Projectiles;
+using Footballer.Displays.Projectiles;
 
-namespace CardMonkey
+namespace Footballer
 {
     /// <summary>
     /// The main class that adds the core tower to the game
     /// </summary>
-    public class CardMonkey : ModTower
+    public class Footballer : ModTower
     {
         // public override string Portrait => "Don't need to override this, using the default of Name-Portrait";
         // public override string Icon => "Don't need to override this, using the default of Name-Icon";
@@ -26,7 +26,7 @@ namespace CardMonkey
         public override int TopPathUpgrades => 5;
         public override int MiddlePathUpgrades => 5;
         public override int BottomPathUpgrades => 5;
-        public override string Description => "Throws playing cards at Bloons";
+        public override string Description => "Kicking bloons out";
 
         // public override string DisplayName => "Don't need to override this, the default turns it into 'Card Monkey'"
 
@@ -39,7 +39,7 @@ namespace CardMonkey
             attackModel.range += 10;
 
             var projectile = attackModel.weapons[0].projectile;
-            projectile.ApplyDisplay<RedCardDisplay>(); // Make the projectiles look like Cards
+            projectile.ApplyDisplay<RegularBallDisplay>(); // Make the projectiles look like Cards
             projectile.pierce += 2;
         }
 
@@ -50,7 +50,7 @@ namespace CardMonkey
         /// </summary>
         public override int GetTowerIndex(List<TowerDetailsModel> towerSet)
         {
-            return towerSet.First(model => model.towerId == TowerType.BoomerangMonkey).towerIndex + 1;
+            return towerSet.First(model => model.towerId == TowerType.DartMonkey).towerIndex + 1;
         }
 
         /// <summary>

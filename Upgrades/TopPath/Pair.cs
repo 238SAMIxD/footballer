@@ -4,9 +4,9 @@ using Il2CppAssets.Scripts.Simulation.Towers;
 using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
 
-namespace CardMonkey.Upgrades.TopPath
+namespace Footballer.Upgrades.TopPath
 {
-    public class Pair : ModUpgrade<CardMonkey>
+    public class Pair : ModUpgrade<Footballer>
     {
         // public override string Portrait => "Don't need to override this, using the default of Pair-Portrait.png";
         // public override string Icon => "Don't need to override this, using the default of Pair-Icon.png";

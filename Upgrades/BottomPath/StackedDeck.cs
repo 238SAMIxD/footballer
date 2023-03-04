@@ -4,9 +4,9 @@ using Il2CppAssets.Scripts.Unity;
 using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
 
-namespace CardMonkey.Upgrades.BottomPath
+namespace Footballer.Upgrades.BottomPath
 {
-    public class StackedDeck : ModUpgrade<CardMonkey>
+    public class StackedDeck : ModUpgrade<Footballer>
     {
         public override int Path => BOTTOM;
         public override int Tier => 3;
@@ -14,7 +14,7 @@ namespace CardMonkey.Upgrades.BottomPath
 
         public override string Description => "Attacks extra fast at the start of the round";
 
-        public override string Portrait => "CardMonkey-Portrait";
+        public override string Portrait => "Footballer-Portrait";
 
         public override void ApplyUpgrade(TowerModel tower)
         {

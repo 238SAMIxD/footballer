@@ -3,9 +3,9 @@ using Il2CppAssets.Scripts.Models.Towers.Filters;
 using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
 
-namespace CardMonkey.Upgrades.BottomPath
+namespace Footballer.Upgrades.BottomPath
 {
-    public class SleightOfHand : ModUpgrade<CardMonkey>
+    public class SleightOfHand : ModUpgrade<Footballer>
     {
         public override int Path => BOTTOM;
         public override int Tier => 2;
@@ -14,7 +14,7 @@ namespace CardMonkey.Upgrades.BottomPath
         public override string DisplayName => "Sleight of Hand";
         public override string Description => "Can attack Camo Bloons";
 
-        public override string Portrait => "CardMonkey-Portrait";
+        public override string Portrait => "Footballer-Portrait";
 
         /// <summary>
         /// Default priority is 0, so this lower priority makes this Upgrade always apply last so that it will catch

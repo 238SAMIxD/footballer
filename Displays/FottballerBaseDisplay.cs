@@ -5,12 +5,12 @@ using BTD_Mod_Helper.Api.Display;
 using BTD_Mod_Helper.Extensions;
 using UnityEngine;
 
-namespace CardMonkey.Displays
+namespace Footballer.Displays
 {
-    public class CardMonkeyBaseDisplay : ModTowerDisplay<CardMonkey>
+    public class FootballerBaseDisplay : ModTowerDisplay<Footballer>
     {
         // Copy the Boomerang Monkey display
-        public override string BaseDisplay => GetDisplay(TowerType.BoomerangMonkey);
+        public override string BaseDisplay => GetDisplay(TowerType.DartMonkey);
 
         public override bool UseForTower(int[] tiers)
         {
@@ -27,10 +27,10 @@ namespace CardMonkey.Displays
 
             // Set our custom texture
             SetMeshTexture(node, Name);
-            SetMeshOutlineColor(node, new Color(73f / 255, 175f / 255, 52f / 255));
+            SetMeshOutlineColor(node, new Color(0 / 255, 0 / 255, 255.0f / 255));
 
-            // Make it not hold the Boomerang
-            node.RemoveBone("SuperMonkeyRig:Dart");
+            // Make it not hold the Dart
+            node.RemoveBone("DartMonkeyDart");
         }
     }
 }

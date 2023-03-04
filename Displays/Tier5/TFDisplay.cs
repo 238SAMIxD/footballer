@@ -4,9 +4,9 @@ using BTD_Mod_Helper.Api.Display;
 using BTD_Mod_Helper.Extensions;
 using UnityEngine;
 
-namespace CardMonkey.Displays.Tier5
+namespace Footballer.Displays.Tier5
 {
-    public class TFDisplay : ModTowerDisplay<CardMonkey>
+    public class TFDisplay : ModTowerDisplay<Footballer>
     {
         public override string BaseDisplay => GetDisplay(TowerType.BoomerangMonkey, 0, 0, 4);
 

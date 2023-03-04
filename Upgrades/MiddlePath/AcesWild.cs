@@ -3,11 +3,11 @@ using Il2CppAssets.Scripts.Models.Towers;
 using Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors;
 using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
-using CardMonkey.Displays.Projectiles;
+using Footballer.Displays.Projectiles;
 
-namespace CardMonkey.Upgrades.MiddlePath
+namespace Footballer.Upgrades.MiddlePath
 {
-    public class AcesWild : ModUpgrade<CardMonkey>
+    public class AcesWild : ModUpgrade<Footballer>
     {
         public override int Path => MIDDLE;
         public override int Tier => 3;
@@ -18,7 +18,7 @@ namespace CardMonkey.Upgrades.MiddlePath
         public override string Description =>
             "Powerful Ace cards do more damage, further increased against Ceramic and Fortified Bloons.";
 
-        public override string Portrait => "CardMonkey-Portrait";
+        public override string Portrait => "Footballer-Portrait";
 
         public override void ApplyUpgrade(TowerModel tower)
         {

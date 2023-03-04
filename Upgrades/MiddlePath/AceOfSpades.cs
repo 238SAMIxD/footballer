@@ -4,11 +4,11 @@ using Il2CppAssets.Scripts.Models.Towers.Projectiles;
 using Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors;
 using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
-using CardMonkey.Displays.Projectiles;
+using Footballer.Displays.Projectiles;
 
-namespace CardMonkey.Upgrades.MiddlePath
+namespace Footballer.Upgrades.MiddlePath
 {
-    public class AceOfSpades : ModUpgrade<CardMonkey>
+    public class AceOfSpades : ModUpgrade<Footballer>
     {
         public override int Path => MIDDLE;
         public override int Tier => 5;
@@ -19,7 +19,7 @@ namespace CardMonkey.Upgrades.MiddlePath
         public override string DisplayName => "Ace of Spades";
         public override string Description => "Aces are even more deadly, dealing extreme damage to MOAB class bloons.";
 
-        public override string Portrait => "CardMonkey-Portrait";
+        public override string Portrait => "Footballer-Portrait";
 
         public override void ApplyUpgrade(TowerModel tower)
         {

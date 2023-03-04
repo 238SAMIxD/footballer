@@ -1,9 +1,8 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31424.327
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardMonkey", "CardMonkey.csproj", "{561A9956-B233-4A83-87E5-D886071BC206}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Footballer", "Footballer.csproj", "{ED5A1D21-E092-4AE4-967C-CCB7D3C1314D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +10,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{561A9956-B233-4A83-87E5-D886071BC206}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{561A9956-B233-4A83-87E5-D886071BC206}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{561A9956-B233-4A83-87E5-D886071BC206}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{561A9956-B233-4A83-87E5-D886071BC206}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED5A1D21-E092-4AE4-967C-CCB7D3C1314D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED5A1D21-E092-4AE4-967C-CCB7D3C1314D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED5A1D21-E092-4AE4-967C-CCB7D3C1314D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED5A1D21-E092-4AE4-967C-CCB7D3C1314D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

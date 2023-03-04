@@ -8,18 +8,18 @@ using BTD_Mod_Helper.Api.Display;
 using BTD_Mod_Helper.Extensions;
 using UnityEngine;
 
-namespace CardMonkey.Displays
+namespace Footballer.Displays
 {
-    public class CardMonkeyParagonDisplay : ModTowerDisplay<CardMonkey>
+    public class FootballerParagonDisplay : ModTowerDisplay<Footballer>
     {
         /// <summary>
         /// All classes that derive from ModContent MUST have a zero argument constructor to work
         /// </summary>
-        public CardMonkeyParagonDisplay()
+        public FootballerParagonDisplay()
         {
         }
 
-        public CardMonkeyParagonDisplay(int i)
+        public FootballerParagonDisplay(int i)
         {
             ParagonDisplayIndex = i;
         }
@@ -32,7 +32,7 @@ namespace CardMonkey.Displays
 
         public override int ParagonDisplayIndex { get; }
 
-        public override string Name => nameof(CardMonkeyParagonDisplay) + ParagonDisplayIndex;
+        public override string Name => nameof(FootballerParagonDisplay) + ParagonDisplayIndex;
 
         public override bool UseForTower(int[] tiers) => IsParagon(tiers);
 
@@ -45,7 +45,7 @@ namespace CardMonkey.Displays
         {
             for (var i = 0; i < TotalParagonDisplays; i++)
             {
-                yield return new CardMonkeyParagonDisplay(i);
+                yield return new FootballerParagonDisplay(i);
             }
         }
 
@@ -61,7 +61,7 @@ namespace CardMonkey.Displays
             node.SaveMeshTexture();
 #endif
 
-            SetMeshTexture(node, nameof(CardMonkeyParagonDisplay));
+            SetMeshTexture(node, nameof(FootballerParagonDisplay));
             SetMeshOutlineColor(node, new Color(48f / 255f, 0, 121 / 255f));
         }
     }

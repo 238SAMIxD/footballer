@@ -1,15 +1,14 @@
-﻿namespace CardMonkey
+﻿namespace Footballer
 {
     public static class ModHelperData
     {
-        public const string WorksOnVersion = "34.3";
-        public const string Version = "1.2.5";
-        public const string Name = "Card Monkey";
-        public const string Description =
-            "Adds in a new custom tower themed around playing cards.";
+        public const string WorksOnVersion = "35.0";
+        public const string Version = "1.0.0";
+        public const string Name = "Footballer";
+        public const string Description = "Footballer custom tower.";
 
-        public const string RepoOwner = "doombubbles";
-        public const string RepoName = "card-monkey";
-        public const string Icon = "CardMonkey-Icon.png";
+        public const string RepoOwner = "238SAMIxD";
+        public const string RepoName = "footballer";
+        public const string Icon = "Footballer-Icon.png";
     }
 }

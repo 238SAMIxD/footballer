@@ -1,5 +1,5 @@
-<a href="https://github.com/doombubbles/card-monkey/releases/latest/download/CardMonkey.dll">
-    <img align="left" alt="Icon" height="90" src="CardMonkey-Icon.png">
+<a href="https://github.com/doombubbles/card-monkey/releases/latest/download/Footballer.dll">
+    <img align="left" alt="Icon" height="90" src="Footballer-Icon.png">
     <img align="right" alt="Download" height="75" src="https://raw.githubusercontent.com/gurrenm3/BTD-Mod-Helper/master/BloonsTD6%20Mod%20Helper/Resources/DownloadBtn.png">
 </a>
 
@@ -8,7 +8,7 @@
 ### A somewhat serious, somewhat example mod for creating a fully featured (15 upgrades, all crosspaths, custom displays) tower using BTD Mod Helper.
 
 <p float="left">
-    <img alt="Card Monkey" width="300" height="300" src="CardMonkey-Icon.png"/>
+    <img alt="Card Monkey" width="300" height="300" src="Footballer-Icon.png"/>
     <img alt="Card Monkey Paragon" width="300" height="300" src="Upgrades/GodKingOfSpades-Portrait.png"/>
 </p>
 

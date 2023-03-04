@@ -7,24 +7,24 @@ using BTD_Mod_Helper.Api.Display;
 using BTD_Mod_Helper.Extensions;
 using UnityEngine;
 
-namespace CardMonkey.Displays
+namespace Footballer.Displays
 {
     /// <summary>
     /// This is a more complicated example of a ModTowerDisplay, one that loads multiple versions of itself that are
     /// slightly different in order to take advantage of many Boomerang Monkey variants all using the same sprite sheet
     /// </summary>
-    public class CardMonkeyMultiDisplay : ModTowerDisplay<CardMonkey>
+    public class FootballerMultiDisplay : ModTowerDisplay<Footballer>
     {
-        private readonly int[] t = null!; // The tiers used for a particular instance of CardMonkeyBaseDisplay
+        private readonly int[] t = null!; // The tiers used for a particular instance of FootballerBaseDisplay
 
         /// <summary>
         /// All classes that derive from ModContent MUST have a zero argument constructor to work
         /// </summary>
-        public CardMonkeyMultiDisplay()
+        public FootballerMultiDisplay()
         {
         }
 
-        public CardMonkeyMultiDisplay(int[] tiers)
+        public FootballerMultiDisplay(int[] tiers)
         {
             t = tiers;
         }
@@ -32,10 +32,10 @@ namespace CardMonkey.Displays
         /* Using the t value for various overrides */
 
         // Have to give each Display a different name based on the tiers
-        public override string Name => nameof(CardMonkeyMultiDisplay) + "-" + t.Printed();
+        public override string Name => nameof(FootballerMultiDisplay) + "-" + t.Printed();
 
         // Copy the corresponding Boomerang Monkey display
-        public override string BaseDisplay => GetDisplay(TowerType.BoomerangMonkey, t[0], t[1], t[2]);
+        public override string BaseDisplay => GetDisplay(TowerType.DartMonkey, t[0], t[1], t[2]);
 
         /// <summary>
         /// This is an example of loading multiple instances of the same ModDisplay with different values
@@ -51,7 +51,8 @@ namespace CardMonkey.Displays
                         var tiers = new[] {i, j, k};
                         if (tiers.IsValid())
                         {
-                            yield return new CardMonkeyMultiDisplay(tiers);
+                            //yield return new FootballerMultiDisplay(tiers);
+                            yield return new FootballerMultiDisplay(new[] {0,0,0});
                         }
                     }
                 }
@@ -80,13 +81,13 @@ namespace CardMonkey.Displays
 #endif
 
             // Always set the MeshTexture to the same one, since all the cross-paths use the same original sprite atlas
-            SetMeshTexture(node, nameof(CardMonkeyBaseDisplay));
+            SetMeshTexture(node, nameof(FootballerBaseDisplay));
 
-            SetMeshOutlineColor(node, new Color(73f / 255, 175f / 255, 52f / 255));
+            SetMeshOutlineColor(node, new Color(0 / 255, 0 / 255, 0 / 255));
 
 
-            // Make it not hold the Boomerang, name found through the PrintInfo() method above
-            node.RemoveBone("SuperMonkeyRig:Dart");
+            // Make it not hold the Dart, name found through the PrintInfo() method above
+            node.RemoveBone("DartMonkeyDart");
         }
     }
 }

@@ -3,9 +3,9 @@ using Il2CppAssets.Scripts.Models.Towers.Behaviors.Emissions;
 using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
 
-namespace CardMonkey.Upgrades.TopPath
+namespace Footballer.Upgrades.TopPath
 {
-    public class FourOfAKind : ModUpgrade<CardMonkey>
+    public class FourOfAKind : ModUpgrade<Footballer>
     {
         public override int Path => TOP;
         public override int Tier => 3;
@@ -14,7 +14,7 @@ namespace CardMonkey.Upgrades.TopPath
         public override string DisplayName => "Four of a Kind";
         public override string Description => "Throws four cards at a time";
 
-        public override string Portrait => "CardMonkey-Portrait";
+        public override string Portrait => "Footballer-Portrait";
 
         public override void ApplyUpgrade(TowerModel tower)
         {

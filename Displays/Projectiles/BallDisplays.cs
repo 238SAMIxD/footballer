@@ -2,13 +2,13 @@
 using Il2CppAssets.Scripts.Unity.Display;
 using BTD_Mod_Helper.Api.Display;
 
-namespace CardMonkey.Displays.Projectiles
+namespace Footballer.Displays.Projectiles
 {
     // All the Card Projectile displays are so similar, I just kept them in one .cs file
-    // I would've used the multiple instance loading like in CardMonkeyMultiDisplay,
+    // I would've used the multiple instance loading like in FootballerMultiDisplay,
     // but I wanted to be able to directly reference the different classes themselves
 
-    public class RedCardDisplay : ModDisplay
+    public class RegularBallDisplay : ModDisplay
     {
         public override string BaseDisplay => Generic2dDisplay;
 
